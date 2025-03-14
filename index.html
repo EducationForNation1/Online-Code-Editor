@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <h2>Online Code Editor</h2>
+        <div class="editor">
+            <label>HTML</label>
+            <textarea id="htmlCode" onkeyup="runCode()"></textarea>
+
+            <label>CSS</label>
+            <textarea id="cssCode" onkeyup="runCode()"></textarea>
+
+            <label>JavaScript</label>
+            <textarea id="jsCode" onkeyup="runCode()"></textarea>
+        </div>
+
+        <h2>Live Output</h2>
+        <iframe id="output"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
